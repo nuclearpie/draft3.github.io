@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.button {
+  background-color: White;
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: grey;
+}
+
+a:hover {
+  background-color: grey;
+}
+
+.dropbtn {
+  background-color: white;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: grey;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: grey;}
+
+
+
+
+div.scrollmenu2 {
+  background-color: SlateBlue;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu2 a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: px;
+  text-decoration: none;
+}
+
+div.scrollmenu2 a:hover {
+  background-color: darkblue;
+}
+
+
+
+body {
+background-image: url('Accommodation2.jpg');
+Background-repeat: no-repeat;
+background-size: 100% 300px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 50%;
+  height: 550px; 
+  background: grey;
+  padding: 20px;
+}
+
+/* Style the image inside the menu(still need to insert code below */
+
+article {
+  float: left;
+  padding: 20px;
+  width: 50%;
+  background-color: #f1f1f1;
+  height: 550px; 
+}
+
+header {
+  background-color: SlateBlue;
+  padding: 10px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+
+<img src="logo.jpg" alt="logo" width="150" height="100">
+
+<h1 style="text-align:center;">
+Come on down to
+<br>
+National Service Resort & Country Club(Changi)
+</h1>
+
+
+<div class="dropdown">
+  <button class="dropbtn">Things To Do</button>
+  <div class="dropdown-content">
+    <a href="Dining Options.htm">Dine</a>
+    <a href="Sporting Options.htm">Sports</a>
+    <a href="Recreational Options.htm">Recreation</a>
+  </div>
+</div>
+
+<button class="button">
+<a href="Getting there.htm">Getting There</a>
+</button>
+
+<button class="button">
+<a href="Accommodation.htm">Accommodation</a>
+</button>
+
+<button class="button">
+<a href="Home Page.htm">Home</a>
+</button>
+
+
+
+</head>
+
+<body>
+
+
+<header>
+<h3 style="text-align:center;">
+See something you like?
+<br>
+Click on the image to find out more!
+<h3>
+
+<div class="scrollmenu2">
+<a href="Squash.htm">
+  <img src="Squash court.jpg" alt="Squash" style="width:300px;height:300px;border:0">
+</a>
+<a href="Jackpot Room.htm">
+  <img src="Inside jackpot.jpg" alt="jackpot" style="width:300px;height:300px;border:0">
+</a>
+<a href="Swimming Pool.htm">
+  <img src="Pool people.jpg" alt="Squash" style="width:300px;height:300px;border:0">
+</a>
+<a href="Bowling alley.htm">
+  <img src="bowling gallery.jpg" alt="bowling" style="width:300px;height:300px;border:0">
+</a>
+<a href="BBall.htm">
+  <img src="bball kids.jpg" alt="Squash" style="width:300px;height:300px;border:0">
+</a>
+<a href="Tennis.htm">
+  <img src="Tennis Court.jpg" alt="Tennis" style="width:300px;height:300px;border:0">
+</a>
+<a href="Gym.htm">
+  <img src="gym.jpg" alt="Gym" style="width:300px;height:300px;border:0">
+</a>
+<a href="Playground.htm">
+  <img src="Playground.jpg" alt="Playground" style="width:300px;height:300px;border:0">
+</a>
+<a href="Billiards Room.htm">
+  <img src="Billiards Room.jpg" alt="Billiards" style="width:300px;height:300px;border:0">
+</a>
+</div>
+</header>
+
+<section>
+
+  <nav>
+<h2 style="text-align:center;">What's the resort life like?</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZiEYb5bM454?controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+</nav>
+  
+
+ <article>
+<h2 style="text-align:center;"> Click here to visit the official NSRCC Instagram page!<h2>
+<a href="https://www.instagram.com/nsrcc/?hl=en">
+  <img src="Instagram.jpg" alt="Instagram page" style="width:300px;height:300px;border:0">
+</a>
+
+ </article>
+</section>
+
+</html>
